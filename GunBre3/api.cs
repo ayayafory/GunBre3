@@ -20,17 +20,17 @@ namespace GunBre3
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        GBRetVal SetRarelityComboBox(ComboBox cb)
         {
-            InitializeComponent();
-            SetRarelityComboBox(crw_rarity00);
-            SetRarelityComboBox(lrw_rarity00);
-            SetRarelityComboBox(head_rarity00);
-            SetRarelityComboBox(body_rarity00);
-            SetRarelityComboBox(arms_rarity00);
-            SetRarelityComboBox(leg_rarity00);
-            SetRarelityComboBox(bp_rarity00);
-            SetRarelityComboBox(sd_rarity00);
+            GBRetVal gbRet = GBRetVal.GB_SUCCESS;
+            cb.ItemsSource = new string[] { "uncommon", "rare", "exclusive", "legendary" };
+            cb.SelectedIndex = 0;
+            return gbRet;
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+
         }
     }
 }
