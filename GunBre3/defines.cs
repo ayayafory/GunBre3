@@ -20,10 +20,23 @@ namespace GunBre3
     /// </summary>
     public partial class MainWindow : Window
     {
-        enum GBRetVal
+        public struct FixAbilityTable
         {
-            GB_SUCCESS,
-            GB_ERROR,
+            public string name;
+            public string type;
+            public double val;
+
+            public FixAbilityTable(string p1, string p2, double p3)
+            {
+                name = p1;
+                type = p2;
+                val = p3;
+            }
+
         }
+
+        public string[] RareTbl = new string[] { "uncommon", "rare", "exclusive", "legendary" };
+        public string[] AbiTbl = new string[] { "準備中" };
+
     }
 }

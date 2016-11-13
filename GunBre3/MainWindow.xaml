@@ -5,103 +5,105 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GunBre3"
         mc:Ignorable="d"
-        Title="がんぶれ３　アビリティ" Height="600" Width="1325" ResizeMode="CanMinimize" Closing="Window_Closing">
+        Title="がんぶれ３　アビリティ" Height="850" Width="1200" ResizeMode="CanMinimize" Closing="Window_Closing" Left="0" Top="0">
     <Grid>
         <TextBlock x:Name="crw" HorizontalAlignment="Left" Height="23" Margin="20,40,0,0" TextWrapping="Wrap" Text="CLOSE RANGE WEAPON" VerticalAlignment="Top"/>
-        <TextBlock x:Name="lrw" HorizontalAlignment="Left" Height="23" Margin="180,40,0,0" TextWrapping="Wrap" Text="LONG RANGE WEAPON" VerticalAlignment="Top"/>
-        <TextBlock x:Name="head" HorizontalAlignment="Left" Height="23" Margin="340,40,0,0" TextWrapping="Wrap" Text="HEAD" VerticalAlignment="Top"/>
-        <TextBlock x:Name="body" HorizontalAlignment="Left" Height="23" Margin="500,40,0,0" TextWrapping="Wrap" Text="BODY" VerticalAlignment="Top"/>
-        <TextBlock x:Name="arms" HorizontalAlignment="Left" Height="23" Margin="660,40,0,0" TextWrapping="Wrap" Text="ARMS" VerticalAlignment="Top"/>
-        <TextBlock x:Name="leg" HorizontalAlignment="Left" Height="23" Margin="820,40,0,0" TextWrapping="Wrap" Text="LEG" VerticalAlignment="Top"/>
-        <TextBlock x:Name="backpack" HorizontalAlignment="Left" Height="23" Margin="980,40,0,0" TextWrapping="Wrap" Text="BACKPACK" VerticalAlignment="Top"/>
-        <TextBlock x:Name="shield" HorizontalAlignment="Left" Height="23" Margin="1140,40,0,0" TextWrapping="Wrap" Text="SHIELD" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lrw" HorizontalAlignment="Left" Height="23" Margin="240,40,0,0" TextWrapping="Wrap" Text="LONG RANGE WEAPON" VerticalAlignment="Top"/>
+        <TextBlock x:Name="head" HorizontalAlignment="Left" Height="23" Margin="460,40,0,0" TextWrapping="Wrap" Text="HEAD" VerticalAlignment="Top"/>
+        <TextBlock x:Name="body" HorizontalAlignment="Left" Height="23" Margin="680,40,0,0" TextWrapping="Wrap" Text="BODY" VerticalAlignment="Top"/>
+        <TextBlock x:Name="arms" HorizontalAlignment="Left" Height="23" Margin="900,40,0,0" TextWrapping="Wrap" Text="ARMS" VerticalAlignment="Top"/>
+        <TextBlock x:Name="leg" HorizontalAlignment="Left" Height="23" Margin="20,460,0,0" TextWrapping="Wrap" Text="LEG" VerticalAlignment="Top"/>
+        <TextBlock x:Name="backpack" HorizontalAlignment="Left" Height="23" Margin="240,460,0,0" TextWrapping="Wrap" Text="BACKPACK" VerticalAlignment="Top"/>
+        <TextBlock x:Name="shield" HorizontalAlignment="Left" Height="23" Margin="460,460,0,0" TextWrapping="Wrap" Text="SHIELD" VerticalAlignment="Top"/>
         <ComboBox x:Name="crw_rarity00" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="crw_ability0" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability1" HorizontalAlignment="Left" Margin="20,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability2" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability3" HorizontalAlignment="Left" Margin="20,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability4" HorizontalAlignment="Left" Margin="20,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability5" HorizontalAlignment="Left" Margin="20,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability6" HorizontalAlignment="Left" Margin="20,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability7" HorizontalAlignment="Left" Margin="20,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability8" HorizontalAlignment="Left" Margin="20,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="crw_ability9" HorizontalAlignment="Left" Margin="20,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_rarity00" HorizontalAlignment="Left" Margin="180,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="lrw_ability0" HorizontalAlignment="Left" Margin="180,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability1" HorizontalAlignment="Left" Margin="180,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability2" HorizontalAlignment="Left" Margin="180,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability3" HorizontalAlignment="Left" Margin="180,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability4" HorizontalAlignment="Left" Margin="180,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability5" HorizontalAlignment="Left" Margin="180,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability6" HorizontalAlignment="Left" Margin="180,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability7" HorizontalAlignment="Left" Margin="180,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability8" HorizontalAlignment="Left" Margin="180,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_ability9" HorizontalAlignment="Left" Margin="180,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_rarity00" HorizontalAlignment="Left" Margin="340,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="head_ability0" HorizontalAlignment="Left" Margin="340,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability1" HorizontalAlignment="Left" Margin="340,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability2" HorizontalAlignment="Left" Margin="340,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability3" HorizontalAlignment="Left" Margin="340,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability4" HorizontalAlignment="Left" Margin="340,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability5" HorizontalAlignment="Left" Margin="340,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability6" HorizontalAlignment="Left" Margin="340,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability7" HorizontalAlignment="Left" Margin="340,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability8" HorizontalAlignment="Left" Margin="340,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_ability9" HorizontalAlignment="Left" Margin="340,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_rarity00" HorizontalAlignment="Left" Margin="500,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="body_ability0" HorizontalAlignment="Left" Margin="500,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability1" HorizontalAlignment="Left" Margin="500,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability2" HorizontalAlignment="Left" Margin="500,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability3" HorizontalAlignment="Left" Margin="500,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability4" HorizontalAlignment="Left" Margin="500,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability5" HorizontalAlignment="Left" Margin="500,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability6" HorizontalAlignment="Left" Margin="500,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability7" HorizontalAlignment="Left" Margin="500,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability8" HorizontalAlignment="Left" Margin="500,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_ability9" HorizontalAlignment="Left" Margin="500,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_rarity00" HorizontalAlignment="Left" Margin="660,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="arms_ability0" HorizontalAlignment="Left" Margin="660,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability1" HorizontalAlignment="Left" Margin="660,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability2" HorizontalAlignment="Left" Margin="660,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability3" HorizontalAlignment="Left" Margin="660,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability4" HorizontalAlignment="Left" Margin="660,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability5" HorizontalAlignment="Left" Margin="660,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability6" HorizontalAlignment="Left" Margin="660,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability7" HorizontalAlignment="Left" Margin="660,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability8" HorizontalAlignment="Left" Margin="660,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_ability9" HorizontalAlignment="Left" Margin="660,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_rarity00" HorizontalAlignment="Left" Margin="820,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="leg_ability0" HorizontalAlignment="Left" Margin="820,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability1" HorizontalAlignment="Left" Margin="820,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability2" HorizontalAlignment="Left" Margin="820,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability3" HorizontalAlignment="Left" Margin="820,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability4" HorizontalAlignment="Left" Margin="820,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability5" HorizontalAlignment="Left" Margin="820,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability6" HorizontalAlignment="Left" Margin="820,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability7" HorizontalAlignment="Left" Margin="820,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability8" HorizontalAlignment="Left" Margin="820,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_ability9" HorizontalAlignment="Left" Margin="820,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_rarity00" HorizontalAlignment="Left" Margin="980,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="bp_ability0" HorizontalAlignment="Left" Margin="980,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability1" HorizontalAlignment="Left" Margin="980,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability2" HorizontalAlignment="Left" Margin="980,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability3" HorizontalAlignment="Left" Margin="980,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability4" HorizontalAlignment="Left" Margin="980,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability5" HorizontalAlignment="Left" Margin="980,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability6" HorizontalAlignment="Left" Margin="980,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability7" HorizontalAlignment="Left" Margin="980,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability8" HorizontalAlignment="Left" Margin="980,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="bp_ability9" HorizontalAlignment="Left" Margin="980,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_rarity00" HorizontalAlignment="Left" Margin="1140,80,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="sd_ability0" HorizontalAlignment="Left" Margin="1140,120,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability1" HorizontalAlignment="Left" Margin="1140,147,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability2" HorizontalAlignment="Left" Margin="1140,174,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability3" HorizontalAlignment="Left" Margin="1140,201,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability4" HorizontalAlignment="Left" Margin="1140,228,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability5" HorizontalAlignment="Left" Margin="1140,255,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability6" HorizontalAlignment="Left" Margin="1140,282,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability7" HorizontalAlignment="Left" Margin="1140,309,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability8" HorizontalAlignment="Left" Margin="1140,336,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_ability9" HorizontalAlignment="Left" Margin="1140,363,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability0" HorizontalAlignment="Left" Margin="60,120,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability1" HorizontalAlignment="Left" Margin="60,147,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability2" HorizontalAlignment="Left" Margin="60,174,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability3" HorizontalAlignment="Left" Margin="60,201,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability4" HorizontalAlignment="Left" Margin="60,228,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability5" HorizontalAlignment="Left" Margin="60,255,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability6" HorizontalAlignment="Left" Margin="60,282,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability7" HorizontalAlignment="Left" Margin="60,309,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability8" HorizontalAlignment="Left" Margin="60,336,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="crw_ability9" HorizontalAlignment="Left" Margin="60,363,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_rarity00" HorizontalAlignment="Left" Margin="240,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="lrw_ability0" HorizontalAlignment="Left" Margin="280,120,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability1" HorizontalAlignment="Left" Margin="280,147,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability2" HorizontalAlignment="Left" Margin="280,174,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability3" HorizontalAlignment="Left" Margin="280,201,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability4" HorizontalAlignment="Left" Margin="280,228,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability5" HorizontalAlignment="Left" Margin="280,255,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability6" HorizontalAlignment="Left" Margin="280,282,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability7" HorizontalAlignment="Left" Margin="280,309,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability8" HorizontalAlignment="Left" Margin="280,336,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="lrw_ability9" HorizontalAlignment="Left" Margin="280,363,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_rarity00" HorizontalAlignment="Left" Margin="460,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="head_ability0" HorizontalAlignment="Left" Margin="500,120,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability1" HorizontalAlignment="Left" Margin="500,147,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability2" HorizontalAlignment="Left" Margin="500,174,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability3" HorizontalAlignment="Left" Margin="500,201,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability4" HorizontalAlignment="Left" Margin="500,228,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability5" HorizontalAlignment="Left" Margin="500,255,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability6" HorizontalAlignment="Left" Margin="500,282,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability7" HorizontalAlignment="Left" Margin="500,309,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability8" HorizontalAlignment="Left" Margin="500,336,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="head_ability9" HorizontalAlignment="Left" Margin="500,363,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_rarity00" HorizontalAlignment="Left" Margin="680,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="body_ability0" HorizontalAlignment="Left" Margin="720,120,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability1" HorizontalAlignment="Left" Margin="720,147,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability2" HorizontalAlignment="Left" Margin="720,174,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability3" HorizontalAlignment="Left" Margin="720,201,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability4" HorizontalAlignment="Left" Margin="720,228,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability5" HorizontalAlignment="Left" Margin="720,255,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability6" HorizontalAlignment="Left" Margin="720,282,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability7" HorizontalAlignment="Left" Margin="720,309,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability8" HorizontalAlignment="Left" Margin="720,336,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="body_ability9" HorizontalAlignment="Left" Margin="720,363,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_rarity00" HorizontalAlignment="Left" Margin="900,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="arms_ability0" HorizontalAlignment="Left" Margin="940,120,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability1" HorizontalAlignment="Left" Margin="940,147,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability2" HorizontalAlignment="Left" Margin="940,174,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability3" HorizontalAlignment="Left" Margin="940,201,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability4" HorizontalAlignment="Left" Margin="940,228,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability5" HorizontalAlignment="Left" Margin="940,255,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability6" HorizontalAlignment="Left" Margin="940,282,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability7" HorizontalAlignment="Left" Margin="940,309,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability8" HorizontalAlignment="Left" Margin="940,336,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="arms_ability9" HorizontalAlignment="Left" Margin="940,363,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_rarity00" HorizontalAlignment="Left" Margin="20,500,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="leg_ability0" HorizontalAlignment="Left" Margin="60,540,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability1" HorizontalAlignment="Left" Margin="60,567,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability2" HorizontalAlignment="Left" Margin="60,594,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability3" HorizontalAlignment="Left" Margin="60,621,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability4" HorizontalAlignment="Left" Margin="60,648,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability5" HorizontalAlignment="Left" Margin="60,675,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability6" HorizontalAlignment="Left" Margin="60,702,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability7" HorizontalAlignment="Left" Margin="60,729,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability8" HorizontalAlignment="Left" Margin="60,756,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="leg_ability9" HorizontalAlignment="Left" Margin="60,783,0,0" VerticalAlignment="Top" Width="140"/>
+        <CheckBox x:Name="leg_abifix00" HorizontalAlignment="Left" Margin="20,540,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix00_Clicked"/>
+        <ComboBox x:Name="bp_rarity00" HorizontalAlignment="Left" Margin="240,500,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="bp_ability0" HorizontalAlignment="Left" Margin="280,540,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability1" HorizontalAlignment="Left" Margin="280,567,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability2" HorizontalAlignment="Left" Margin="280,594,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability3" HorizontalAlignment="Left" Margin="280,621,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability4" HorizontalAlignment="Left" Margin="280,648,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability5" HorizontalAlignment="Left" Margin="280,675,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability6" HorizontalAlignment="Left" Margin="280,702,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability7" HorizontalAlignment="Left" Margin="280,729,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability8" HorizontalAlignment="Left" Margin="280,756,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="bp_ability9" HorizontalAlignment="Left" Margin="280,783,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_rarity00" HorizontalAlignment="Left" Margin="460,500,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="sd_ability0" HorizontalAlignment="Left" Margin="500,540,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability1" HorizontalAlignment="Left" Margin="500,567,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability2" HorizontalAlignment="Left" Margin="500,594,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability3" HorizontalAlignment="Left" Margin="500,621,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability4" HorizontalAlignment="Left" Margin="500,648,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability5" HorizontalAlignment="Left" Margin="500,675,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability6" HorizontalAlignment="Left" Margin="500,702,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability7" HorizontalAlignment="Left" Margin="500,729,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability8" HorizontalAlignment="Left" Margin="500,756,0,0" VerticalAlignment="Top" Width="140"/>
+        <ComboBox x:Name="sd_ability9" HorizontalAlignment="Left" Margin="500,783,0,0" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="check" Content="check" HorizontalAlignment="Left" Margin="680,540,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="check_Click"/>
     </Grid>
 </Window>
