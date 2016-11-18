@@ -15,7 +15,7 @@
         <TextBlock x:Name="leg" HorizontalAlignment="Left" Height="23" Margin="20,460,0,0" TextWrapping="Wrap" Text="LEG" VerticalAlignment="Top"/>
         <TextBlock x:Name="backpack" HorizontalAlignment="Left" Height="23" Margin="240,460,0,0" TextWrapping="Wrap" Text="BACKPACK" VerticalAlignment="Top"/>
         <TextBlock x:Name="shield" HorizontalAlignment="Left" Height="23" Margin="460,460,0,0" TextWrapping="Wrap" Text="SHIELD" VerticalAlignment="Top"/>
-        <ComboBox x:Name="crw_rarity00" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="crw_rarity00" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="crw_rarity00_SelectionChanged"/>
         <ComboBox x:Name="crw_ability0" HorizontalAlignment="Left" Margin="60,120,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="crw_ability1" HorizontalAlignment="Left" Margin="60,147,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="crw_ability2" HorizontalAlignment="Left" Margin="60,174,0,0" VerticalAlignment="Top" Width="140"/>
@@ -26,7 +26,17 @@
         <ComboBox x:Name="crw_ability7" HorizontalAlignment="Left" Margin="60,309,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="crw_ability8" HorizontalAlignment="Left" Margin="60,336,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="crw_ability9" HorizontalAlignment="Left" Margin="60,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="lrw_rarity00" HorizontalAlignment="Left" Margin="240,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="crw_abifix00" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix00_Clicked"/>
+        <CheckBox x:Name="crw_abifix01" HorizontalAlignment="Left" Margin="20,147,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix01_Clicked"/>
+        <CheckBox x:Name="crw_abifix02" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix02_Clicked"/>
+        <CheckBox x:Name="crw_abifix03" HorizontalAlignment="Left" Margin="20,201,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix03_Clicked"/>
+        <CheckBox x:Name="crw_abifix04" HorizontalAlignment="Left" Margin="20,228,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix04_Clicked"/>
+        <CheckBox x:Name="crw_abifix05" HorizontalAlignment="Left" Margin="20,255,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix05_Clicked"/>
+        <CheckBox x:Name="crw_abifix06" HorizontalAlignment="Left" Margin="20,282,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix06_Clicked"/>
+        <CheckBox x:Name="crw_abifix07" HorizontalAlignment="Left" Margin="20,309,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix07_Clicked"/>
+        <CheckBox x:Name="crw_abifix08" HorizontalAlignment="Left" Margin="20,336,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix08_Clicked"/>
+        <CheckBox x:Name="crw_abifix09" HorizontalAlignment="Left" Margin="20,363,0,0" VerticalAlignment="Top" Content="fix" Click="crw_abifix09_Clicked"/>
+        <ComboBox x:Name="lrw_rarity00" HorizontalAlignment="Left" Margin="240,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="lrw_rarity00_SelectionChanged"/>
         <ComboBox x:Name="lrw_ability0" HorizontalAlignment="Left" Margin="280,120,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="lrw_ability1" HorizontalAlignment="Left" Margin="280,147,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="lrw_ability2" HorizontalAlignment="Left" Margin="280,174,0,0" VerticalAlignment="Top" Width="140"/>
@@ -37,7 +47,17 @@
         <ComboBox x:Name="lrw_ability7" HorizontalAlignment="Left" Margin="280,309,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="lrw_ability8" HorizontalAlignment="Left" Margin="280,336,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="lrw_ability9" HorizontalAlignment="Left" Margin="280,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="head_rarity00" HorizontalAlignment="Left" Margin="460,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="lrw_abifix00" HorizontalAlignment="Left" Margin="240,120,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix00_Clicked"/>
+        <CheckBox x:Name="lrw_abifix01" HorizontalAlignment="Left" Margin="240,147,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix01_Clicked"/>
+        <CheckBox x:Name="lrw_abifix02" HorizontalAlignment="Left" Margin="240,174,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix02_Clicked"/>
+        <CheckBox x:Name="lrw_abifix03" HorizontalAlignment="Left" Margin="240,201,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix03_Clicked"/>
+        <CheckBox x:Name="lrw_abifix04" HorizontalAlignment="Left" Margin="240,228,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix04_Clicked"/>
+        <CheckBox x:Name="lrw_abifix05" HorizontalAlignment="Left" Margin="240,255,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix05_Clicked"/>
+        <CheckBox x:Name="lrw_abifix06" HorizontalAlignment="Left" Margin="240,282,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix06_Clicked"/>
+        <CheckBox x:Name="lrw_abifix07" HorizontalAlignment="Left" Margin="240,309,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix07_Clicked"/>
+        <CheckBox x:Name="lrw_abifix08" HorizontalAlignment="Left" Margin="240,336,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix08_Clicked"/>
+        <CheckBox x:Name="lrw_abifix09" HorizontalAlignment="Left" Margin="240,363,0,0" VerticalAlignment="Top" Content="fix" Click="lrw_abifix09_Clicked"/>
+        <ComboBox x:Name="head_rarity00" HorizontalAlignment="Left" Margin="460,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="head_rarity00_SelectionChanged"/>
         <ComboBox x:Name="head_ability0" HorizontalAlignment="Left" Margin="500,120,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="head_ability1" HorizontalAlignment="Left" Margin="500,147,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="head_ability2" HorizontalAlignment="Left" Margin="500,174,0,0" VerticalAlignment="Top" Width="140"/>
@@ -48,7 +68,17 @@
         <ComboBox x:Name="head_ability7" HorizontalAlignment="Left" Margin="500,309,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="head_ability8" HorizontalAlignment="Left" Margin="500,336,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="head_ability9" HorizontalAlignment="Left" Margin="500,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="body_rarity00" HorizontalAlignment="Left" Margin="680,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="head_abifix00" HorizontalAlignment="Left" Margin="460,120,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix00_Clicked"/>
+        <CheckBox x:Name="head_abifix01" HorizontalAlignment="Left" Margin="460,147,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix01_Clicked"/>
+        <CheckBox x:Name="head_abifix02" HorizontalAlignment="Left" Margin="460,174,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix02_Clicked"/>
+        <CheckBox x:Name="head_abifix03" HorizontalAlignment="Left" Margin="460,201,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix03_Clicked"/>
+        <CheckBox x:Name="head_abifix04" HorizontalAlignment="Left" Margin="460,228,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix04_Clicked"/>
+        <CheckBox x:Name="head_abifix05" HorizontalAlignment="Left" Margin="460,255,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix05_Clicked"/>
+        <CheckBox x:Name="head_abifix06" HorizontalAlignment="Left" Margin="460,282,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix06_Clicked"/>
+        <CheckBox x:Name="head_abifix07" HorizontalAlignment="Left" Margin="460,309,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix07_Clicked"/>
+        <CheckBox x:Name="head_abifix08" HorizontalAlignment="Left" Margin="460,336,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix08_Clicked"/>
+        <CheckBox x:Name="head_abifix09" HorizontalAlignment="Left" Margin="460,363,0,0" VerticalAlignment="Top" Content="fix" Click="head_abifix09_Clicked"/>
+        <ComboBox x:Name="body_rarity00" HorizontalAlignment="Left" Margin="680,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="body_rarity00_SelectionChanged"/>
         <ComboBox x:Name="body_ability0" HorizontalAlignment="Left" Margin="720,120,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="body_ability1" HorizontalAlignment="Left" Margin="720,147,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="body_ability2" HorizontalAlignment="Left" Margin="720,174,0,0" VerticalAlignment="Top" Width="140"/>
@@ -59,7 +89,17 @@
         <ComboBox x:Name="body_ability7" HorizontalAlignment="Left" Margin="720,309,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="body_ability8" HorizontalAlignment="Left" Margin="720,336,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="body_ability9" HorizontalAlignment="Left" Margin="720,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="arms_rarity00" HorizontalAlignment="Left" Margin="900,80,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="body_abifix00" HorizontalAlignment="Left" Margin="680,120,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix00_Clicked"/>
+        <CheckBox x:Name="body_abifix01" HorizontalAlignment="Left" Margin="680,147,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix01_Clicked"/>
+        <CheckBox x:Name="body_abifix02" HorizontalAlignment="Left" Margin="680,174,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix02_Clicked"/>
+        <CheckBox x:Name="body_abifix03" HorizontalAlignment="Left" Margin="680,201,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix03_Clicked"/>
+        <CheckBox x:Name="body_abifix04" HorizontalAlignment="Left" Margin="680,228,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix04_Clicked"/>
+        <CheckBox x:Name="body_abifix05" HorizontalAlignment="Left" Margin="680,255,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix05_Clicked"/>
+        <CheckBox x:Name="body_abifix06" HorizontalAlignment="Left" Margin="680,282,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix06_Clicked"/>
+        <CheckBox x:Name="body_abifix07" HorizontalAlignment="Left" Margin="680,309,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix07_Clicked"/>
+        <CheckBox x:Name="body_abifix08" HorizontalAlignment="Left" Margin="680,336,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix08_Clicked"/>
+        <CheckBox x:Name="body_abifix09" HorizontalAlignment="Left" Margin="680,363,0,0" VerticalAlignment="Top" Content="fix" Click="body_abifix09_Clicked"/>
+        <ComboBox x:Name="arms_rarity00" HorizontalAlignment="Left" Margin="900,80,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="arms_rarity00_SelectionChanged"/>
         <ComboBox x:Name="arms_ability0" HorizontalAlignment="Left" Margin="940,120,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="arms_ability1" HorizontalAlignment="Left" Margin="940,147,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="arms_ability2" HorizontalAlignment="Left" Margin="940,174,0,0" VerticalAlignment="Top" Width="140"/>
@@ -70,7 +110,17 @@
         <ComboBox x:Name="arms_ability7" HorizontalAlignment="Left" Margin="940,309,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="arms_ability8" HorizontalAlignment="Left" Margin="940,336,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="arms_ability9" HorizontalAlignment="Left" Margin="940,363,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="leg_rarity00" HorizontalAlignment="Left" Margin="20,500,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="arms_abifix00" HorizontalAlignment="Left" Margin="900,120,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix00_Clicked"/>
+        <CheckBox x:Name="arms_abifix01" HorizontalAlignment="Left" Margin="900,147,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix01_Clicked"/>
+        <CheckBox x:Name="arms_abifix02" HorizontalAlignment="Left" Margin="900,174,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix02_Clicked"/>
+        <CheckBox x:Name="arms_abifix03" HorizontalAlignment="Left" Margin="900,201,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix03_Clicked"/>
+        <CheckBox x:Name="arms_abifix04" HorizontalAlignment="Left" Margin="900,228,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix04_Clicked"/>
+        <CheckBox x:Name="arms_abifix05" HorizontalAlignment="Left" Margin="900,255,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix05_Clicked"/>
+        <CheckBox x:Name="arms_abifix06" HorizontalAlignment="Left" Margin="900,282,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix06_Clicked"/>
+        <CheckBox x:Name="arms_abifix07" HorizontalAlignment="Left" Margin="900,309,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix07_Clicked"/>
+        <CheckBox x:Name="arms_abifix08" HorizontalAlignment="Left" Margin="900,336,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix08_Clicked"/>
+        <CheckBox x:Name="arms_abifix09" HorizontalAlignment="Left" Margin="900,363,0,0" VerticalAlignment="Top" Content="fix" Click="arms_abifix09_Clicked"/>
+        <ComboBox x:Name="leg_rarity00" HorizontalAlignment="Left" Margin="20,500,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="leg_rarity00_SelectionChanged"/>
         <ComboBox x:Name="leg_ability0" HorizontalAlignment="Left" Margin="60,540,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="leg_ability1" HorizontalAlignment="Left" Margin="60,567,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="leg_ability2" HorizontalAlignment="Left" Margin="60,594,0,0" VerticalAlignment="Top" Width="140"/>
@@ -82,7 +132,16 @@
         <ComboBox x:Name="leg_ability8" HorizontalAlignment="Left" Margin="60,756,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="leg_ability9" HorizontalAlignment="Left" Margin="60,783,0,0" VerticalAlignment="Top" Width="140"/>
         <CheckBox x:Name="leg_abifix00" HorizontalAlignment="Left" Margin="20,540,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix00_Clicked"/>
-        <ComboBox x:Name="bp_rarity00" HorizontalAlignment="Left" Margin="240,500,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="leg_abifix01" HorizontalAlignment="Left" Margin="20,567,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix01_Clicked"/>
+        <CheckBox x:Name="leg_abifix02" HorizontalAlignment="Left" Margin="20,594,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix02_Clicked"/>
+        <CheckBox x:Name="leg_abifix03" HorizontalAlignment="Left" Margin="20,621,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix03_Clicked"/>
+        <CheckBox x:Name="leg_abifix04" HorizontalAlignment="Left" Margin="20,648,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix04_Clicked"/>
+        <CheckBox x:Name="leg_abifix05" HorizontalAlignment="Left" Margin="20,675,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix05_Clicked"/>
+        <CheckBox x:Name="leg_abifix06" HorizontalAlignment="Left" Margin="20,702,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix06_Clicked"/>
+        <CheckBox x:Name="leg_abifix07" HorizontalAlignment="Left" Margin="20,729,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix07_Clicked"/>
+        <CheckBox x:Name="leg_abifix08" HorizontalAlignment="Left" Margin="20,756,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix08_Clicked"/>
+        <CheckBox x:Name="leg_abifix09" HorizontalAlignment="Left" Margin="20,783,0,0" VerticalAlignment="Top" Content="fix" Click="leg_abifix09_Clicked"/>
+        <ComboBox x:Name="bp_rarity00" HorizontalAlignment="Left" Margin="240,500,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="bp_rarity00_SelectionChanged"/>
         <ComboBox x:Name="bp_ability0" HorizontalAlignment="Left" Margin="280,540,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="bp_ability1" HorizontalAlignment="Left" Margin="280,567,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="bp_ability2" HorizontalAlignment="Left" Margin="280,594,0,0" VerticalAlignment="Top" Width="140"/>
@@ -93,7 +152,17 @@
         <ComboBox x:Name="bp_ability7" HorizontalAlignment="Left" Margin="280,729,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="bp_ability8" HorizontalAlignment="Left" Margin="280,756,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="bp_ability9" HorizontalAlignment="Left" Margin="280,783,0,0" VerticalAlignment="Top" Width="140"/>
-        <ComboBox x:Name="sd_rarity00" HorizontalAlignment="Left" Margin="460,500,0,0" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="bp_abifix00" HorizontalAlignment="Left" Margin="240,540,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix00_Clicked"/>
+        <CheckBox x:Name="bp_abifix01" HorizontalAlignment="Left" Margin="240,567,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix01_Clicked"/>
+        <CheckBox x:Name="bp_abifix02" HorizontalAlignment="Left" Margin="240,594,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix02_Clicked"/>
+        <CheckBox x:Name="bp_abifix03" HorizontalAlignment="Left" Margin="240,621,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix03_Clicked"/>
+        <CheckBox x:Name="bp_abifix04" HorizontalAlignment="Left" Margin="240,648,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix04_Clicked"/>
+        <CheckBox x:Name="bp_abifix05" HorizontalAlignment="Left" Margin="240,675,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix05_Clicked"/>
+        <CheckBox x:Name="bp_abifix06" HorizontalAlignment="Left" Margin="240,702,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix06_Clicked"/>
+        <CheckBox x:Name="bp_abifix07" HorizontalAlignment="Left" Margin="240,729,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix07_Clicked"/>
+        <CheckBox x:Name="bp_abifix08" HorizontalAlignment="Left" Margin="240,756,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix08_Clicked"/>
+        <CheckBox x:Name="bp_abifix09" HorizontalAlignment="Left" Margin="240,783,0,0" VerticalAlignment="Top" Content="fix" Click="bp_abifix09_Clicked"/>
+        <ComboBox x:Name="sd_rarity00" HorizontalAlignment="Left" Margin="460,500,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="sd_rarity00_SelectionChanged"/>
         <ComboBox x:Name="sd_ability0" HorizontalAlignment="Left" Margin="500,540,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="sd_ability1" HorizontalAlignment="Left" Margin="500,567,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="sd_ability2" HorizontalAlignment="Left" Margin="500,594,0,0" VerticalAlignment="Top" Width="140"/>
@@ -104,6 +173,17 @@
         <ComboBox x:Name="sd_ability7" HorizontalAlignment="Left" Margin="500,729,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="sd_ability8" HorizontalAlignment="Left" Margin="500,756,0,0" VerticalAlignment="Top" Width="140"/>
         <ComboBox x:Name="sd_ability9" HorizontalAlignment="Left" Margin="500,783,0,0" VerticalAlignment="Top" Width="140"/>
+        <CheckBox x:Name="sd_abifix00" HorizontalAlignment="Left" Margin="460,540,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix00_Clicked"/>
+        <CheckBox x:Name="sd_abifix01" HorizontalAlignment="Left" Margin="460,567,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix01_Clicked"/>
+        <CheckBox x:Name="sd_abifix02" HorizontalAlignment="Left" Margin="460,594,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix02_Clicked"/>
+        <CheckBox x:Name="sd_abifix03" HorizontalAlignment="Left" Margin="460,621,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix03_Clicked"/>
+        <CheckBox x:Name="sd_abifix04" HorizontalAlignment="Left" Margin="460,648,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix04_Clicked"/>
+        <CheckBox x:Name="sd_abifix05" HorizontalAlignment="Left" Margin="460,675,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix05_Clicked"/>
+        <CheckBox x:Name="sd_abifix06" HorizontalAlignment="Left" Margin="460,702,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix06_Clicked"/>
+        <CheckBox x:Name="sd_abifix07" HorizontalAlignment="Left" Margin="460,729,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix07_Clicked"/>
+        <CheckBox x:Name="sd_abifix08" HorizontalAlignment="Left" Margin="460,756,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix08_Clicked"/>
+        <CheckBox x:Name="sd_abifix09" HorizontalAlignment="Left" Margin="460,783,0,0" VerticalAlignment="Top" Content="fix" Click="sd_abifix09_Clicked"/>
         <Button x:Name="check" Content="check" HorizontalAlignment="Left" Margin="680,540,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="check_Click"/>
+        <Button x:Name="show" Content="show" HorizontalAlignment="Left" Margin="680,640,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="show_Click" />
     </Grid>
 </Window>
