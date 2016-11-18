@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GunBre3"
         mc:Ignorable="d"
-        Title="ResultWindow" Height="300" Width="300">
+        Title="ResultWindow" Height="600" Width="600">
     <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="549" Width="572"/>
 
     </Grid>
 </Window>

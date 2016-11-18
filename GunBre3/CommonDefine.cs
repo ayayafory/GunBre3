@@ -23,12 +23,39 @@ namespace GunBre3
 
         }
 
-        public static readonly string[] RareTbl = new string[] { "uncommon", "rare", "exclusive", "legendary" };
+        public struct RarityTable
+        {
+            public string name { get; set; }
+            public int val { get; set; }
+    }
+
+        public static readonly List<RarityTable> RareTbl = new List<RarityTable>
+        {
+            new RarityTable() { name = "UNCOMMON", val = 5 },
+            new RarityTable() { name = "RARE", val = 6 },
+            new RarityTable() { name = "EXCLUSIVE", val = 8 },
+            new RarityTable() { name = "LEGENDARY", val = 10 },
+        };
         public const string AbilityFile = "abi.csv";
+        public const int PartsNum = 8;
+        public const int SlotMaxNum = 10;
 
         public void SetComboBox(ComboBox cb, string[] listname)
         {
             cb.ItemsSource = listname;
+            cb.SelectedIndex = 0;
+        }
+
+        public void SetComboBox(ComboBox cb, List<RarityTable> listname)
+        {
+            string[] list = new string[listname.Count()];
+
+            for (int i = 0; i < listname.Count(); i++)
+            {
+                list[i] = listname[i].name;
+            }
+
+            cb.ItemsSource = list;
             cb.SelectedIndex = 0;
         }
 
@@ -80,7 +107,7 @@ namespace GunBre3
             abilist.Add(string.Empty);
             for (int i = 0; i < abitbl.Count(); i++)
             {
-                if(abilist[abilist.Count()-1] != abitbl[i].type)
+                if (abilist[abilist.Count() - 1] != abitbl[i].type)
                 {
                     abilist.Add(abitbl[i].type);
                 }
