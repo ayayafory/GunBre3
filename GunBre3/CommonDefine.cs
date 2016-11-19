@@ -27,7 +27,7 @@ namespace GunBre3
         {
             public string name { get; set; }
             public int val { get; set; }
-    }
+        }
 
         public static readonly List<RarityTable> RareTbl = new List<RarityTable>
         {
@@ -39,6 +39,7 @@ namespace GunBre3
         public const string AbilityFile = "abi.csv";
         public const int PartsNum = 8;
         public const int SlotMaxNum = 10;
+        public List<FixAbilityTable> fixabitbl;
 
         public void SetComboBox(ComboBox cb, string[] listname)
         {

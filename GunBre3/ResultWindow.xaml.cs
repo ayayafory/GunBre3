@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using static GunBre3.ComDef;
@@ -12,11 +13,13 @@ namespace GunBre3
     {
         MainWindow mw_tmp;
         ComDef com = new ComDef();
+        List<FixAbilityTable> fixabi;
 
         public ResultWindow(MainWindow mw)
         {
             InitializeComponent();
             mw_tmp = mw;
+            fixabi = mw_tmp.fixabitbl;
             Check();
         }
 
@@ -125,6 +128,13 @@ namespace GunBre3
                 str = ErrMsg1("シールド", j) + ErrMsg2(x, y);
             }
 
+            textBlock.Text += str;
+            //textBlock.Text += Environment.NewLine;
+        }
+
+        private void CmpVal(int p1, int p2)
+        {
+            string str = "\t" + fixabi[p1].type + ":\t" + fixabi[p1].val + "\t" + fixabi[p2].val;
             textBlock.Text += str;
             textBlock.Text += Environment.NewLine;
         }
@@ -292,10 +302,23 @@ namespace GunBre3
                                 {
                                     if (Ability[i][j] != "" && Ability[x][y] != "")
                                     {
-                                        /* アビリティの分類で判定するようにする */
-                                        if (Ability[i][j] == Ability[x][y])
+                                        int index1 = -1;
+                                        int index2 = -1;
+                                        for (int z = 0; z < fixabi.Count; z++)
+                                        {
+                                            if(fixabi[z].name == Ability[i][j])
+                                            {
+                                                index1 = z;
+                                            }
+                                            if (fixabi[z].name == Ability[x][y])
+                                            {
+                                                index2 = z;
+                                            }
+                                        }
+                                        if (fixabi[index1].type == fixabi[index2].type)
                                         {
                                             PrintError(i, j, x, y);
+                                            CmpVal(index1, index2);
                                         }
                                     }
                                 }

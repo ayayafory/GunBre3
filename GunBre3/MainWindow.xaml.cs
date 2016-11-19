@@ -11,8 +11,8 @@ namespace GunBre3
     {
         ComDef com = new ComDef();
 
-        List<FixAbilityTable> fixabitbl;
-        string[] fixabiname;
+        public List<FixAbilityTable> fixabitbl;
+        public string[] fixabiname;
 
         public MainWindow()
         {
